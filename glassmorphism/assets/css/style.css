@@ -1,0 +1,54 @@
+@charset "UTF-8";
+*{-webkit-text-size-adjust:none}
+body,html{height:100%}
+body,button,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,select,td,textarea,th,ul{margin:0;padding:0;font-weight:normal}
+
+.ecffect-section{height:100%;background-color:#010414;font-family:HelveticaNeue-Light,AppleSDGothicNeo-Light,'Malgun Gothic','맑은 고딕',sans-serif;letter-spacing:1px}
+.ecffect-section .container{display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;width:100%;height:100%;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.ecffect-section img{display:inline-block;vertical-align:top}
+.ecffect-section .circle-wrap{position:absolute;width:400px;height:240px;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
+.ecffect-section .circle-wrap .circle{position:absolute;border-radius:50%;background:-o-linear-gradient(250deg,#fef7da,#f28ae1,#fca8a9);background:linear-gradient(200deg,#fef7da,#f28ae1,#fca8a9);-webkit-animation:circle-animaiton 6s ease-out infinite;animation:circle-animaiton 6s ease-out infinite}
+
+@-webkit-keyframes circle-animaiton{
+	0%{-webkit-transform:translate(0,30px);transform:translate(0,30px)}
+	25%{-webkit-transform:translate(30px,10px);transform:translate(30px,10px)}
+	50%{-webkit-transform:ranslate(60px,-10px);transform:ranslate(60px,-10px)}
+	75%{-webkit-transform:translate(30,10px);transform:translate(30,10px)}
+	100%{-webkit-transform:translate(0,30px);transform:translate(0,30px)}
+}
+@keyframes circle-animaiton{
+	0%{-webkit-transform:translate(0,30px);transform:translate(0,30px)}
+	25%{-webkit-transform:translate(30px,10px);transform:translate(30px,10px)}
+	50%{-webkit-transform:ranslate(60px,-10px);transform:ranslate(60px,-10px)}
+	75%{-webkit-transform:translate(30,10px);transform:translate(30,10px)}
+	100%{-webkit-transform:translate(0,30px);transform:translate(0,30px)}
+}
+
+.ecffect-section .circle-wrap .circle:nth-child(1){top:-150px;left:-115px;width:210px;height:210px}
+.ecffect-section .circle-wrap .circle:nth-child(2){top:100px;left:260px;width:240px;height:240px;background:-o-linear-gradient(320deg,#fef7da,#f28ae1,#e6c8fd);background:linear-gradient(130deg,#fef7da,#f28ae1,#e6c8fd);-webkit-animation-delay:1s;animation-delay:1s}
+.ecffect-section .card-wrap{position:relative;width:400px;height:240px;padding:30px 25px;border:2px solid rgba(255,255,255,.1);border-radius:22px;background-color:rgba(255,255,255,.1);-webkit-backdrop-filter:blur(40px);backdrop-filter:blur(40px);-webkit-box-shadow:0 0 80px rgb(0 0 0 / 20%);box-shadow:0 0 80px rgb(0 0 0 / 20%);color:#fff;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-animation:card-animaition 6s linear infinite;animation:card-animaition 6s linear infinite}
+.ecffect-section .card-wrap:before{content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;filter: blur(5px);z-index: -1;}
+
+@-webkit-keyframes card-animaition{
+	0%,100%{-webkit-transform:translate(0);transform:translate(0)}
+	35%{-webkit-transform:translate(-20px,-20px);transform:translate(-20px,-20px)}
+	70%{-webkit-transform:translate(-20px,30px);transform:translateY(-20px,30px)}
+}
+@keyframes card-animaition{
+	0%,100%{-webkit-transform:translate(0);transform:translate(0)}
+	35%{-webkit-transform:translate(-20px,-20px);transform:translate(-20px,-20px)}
+	70%{-webkit-transform:translate(-20px,30px);transform:translateY(-20px,30px)}
+}
+
+.ecffect-section .card-wrap .card-logo{position:absolute;top:30px;right:25px;width:60px;height:19px}
+.ecffect-section .card-wrap .card-chip{width:55px;height:41px;margin-top:25px}
+.ecffect-section .card-wrap .card-number{margin-top:25px;font-size:21px}
+.ecffect-section .card-wrap .card-info-wrap{margin-top:40px}
+.ecffect-section .card-info-wrap:after{content:'';display:block;clear:both}
+.ecffect-section .card-info-wrap .card-info{float:left;font-size:16px}
+.ecffect-section .card-info-wrap .card-info-name{float:right}
