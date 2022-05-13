@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{-webkit-text-size-adjust:none}
+		body,html{height:100%}
+		body,button,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,select,td,textarea,th,ul{margin:0;padding:0;font-weight:normal}
+		body{overflow-x: hidden;}
+
+		.container { width: 500%; height: 100%; display: flex; flex-wrap: nowrap; }
+		.section { width: 100%; height: 100%; position: relative; display: flex; justify-content: center; align-items: center; }
+
+		.section{position: relative;width:100vw;height: 100vh;background-color: #fff;}
+		.section .wrap{display: flex;height: 100%;align-items: center;}
+		.section .wrap > div{width: 100%;}
+		.section .wrap .mot{width: 100%;font-size:14vw;text-transform:uppercase;}
+		.section .wrap .mot1{transform: translateX(20%);}
+		.section .wrap .mot2{padding-left:200px;transform: translateX(20%);}
+		.section .wrap .mot3{display: flex;width:calc(100% + 1.2vw);justify-content: space-between;white-space: nowrap;}
+		.section02{overflow: hidden;position: relative;z-index: 2;background-color: #000;color: #fff;}
+		.section02 .mask{position: absolute;top: 0;left: 0;width: 100%;height: 100%;transform: translateX(-100%);}
+	</style>
+</head>
+
+<body>
+	<div id="container" class="container">
+		<section class="section section01" style="transform:translate3d(40.2633%, 0px, 0px)">
+			<div class="wrap">
+				<div>
+					<div class="mot mot1" style="transform: translate3d(0px, 0px, 0px);">PTKOREA</div>
+					<div class="mot mot2" style="transform: translate3d(0px, 0px, 0px);">Branch</div>
+					<div class="mot mot3"><span>In</span> <span>Seoul</span></div>
+				</div>
+			</div>
+		</section>
+		<section class="section section02">
+			<div class="mask" style="transform:translate3d(-59.7367%, 0px, 0px)">
+				<div class="wrap">
+					<div>
+						<div class="mot mot1" style="transform: translate3d(0px, 0px, 0px);">PTKOREA</div>
+						<div class="mot mot2" style="transform: translate3d(0px, 0px, 0px);">Branch</div>
+						<div class="mot mot3"><span>In</span> <span>Seoul</span></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+	<script src="app.js"></script>
+	<!-- <script src="app2.js"></script> -->
+</body>
+
+</html>
