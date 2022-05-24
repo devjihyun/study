@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모션 가이드 정리</title>
+	<style>
+		html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1.2;
+		font-family:HelveticaNeue-Light,AppleSDGothicNeo-Light,'Malgun Gothic','맑은 고딕',sans-serif;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	html, body{height:100%}
+	.study-wrap{padding:0 40px}
+	.study-wrap a{display:inline-block;font-size:13px;color:#66bb9f;vertical-align:top}
+	.study-wrap .ref-link{margin: 10px 0 0 10px}
+	.study-tit{padding:20px 0;font-weight:bold;font-size:24px}
+	.study-section + .study-section{margin-top:50px}
+	.study-section h2{font-weight:bold;font-size:20px;color:#e83e3e}
+	.study-section h3{font-size:16px;padding:10px 0;color:#4f61e2}
+	.section-item{margin:20px 0 0 30px}
+	.section-list li{margin-left:30px;font-size:14px;list-style-type:square}
+	.section-list li + li{margin-top:4px}
+	.section-desc{font-size:14px}
+	.section-desc + .section-desc{margin-top:4px}
+
+	</style>
+</head>
+<body>
+    <div class="study-wrap">
+    	<h1 class="study-tit">2022 R&D - Sonia</h1>
+		<section class="study-section">
+			<h2>Interative Contents</h2>
+			<div class="section-item">
+				<h3>1. Trend Research</h3>
+				<ul class="section-list">
+					<li>ScrollTrigger & Transform</li>
+					<li>mix-blend-mode</li>
+					<li>clip-path</li>
+					<li>Glassmorphism & Claymorphism(backdrop-filter)</li>
+				</ul>
+				<a href="#none" target="_blank" class="ref-link">레퍼런스 사이트 모음(업데이트 예정)</a>
+			</div>
+			<div class="section-item">
+				<h3>2. Glassmorphism</h3>
+				<a href="#none">마크업 가이드 - Glassmorphism</a>
+			</div>
+			<div class="section-item">
+				<h3>3. GSAP 활용한 텍스트 모션</h3>
+				<a href="#none">Motion Demo</a>
+				<p class="section-desc">motion1 : GSAP 마우스 효과와 mix-blend-mode: screen 속성을 사용하여 마우스 커서를 커스텀, 커서 이동 시 텍스트를 밝게 비추는 효과 구현</p>
+				<p class="section-desc">motion2 : <a href="https://www.apple.com/kr/iphone-se/">www.apple.com/kr/iphone-se(대박 배터리 성능)</a> 페이지 내 텍스트 모션(스크롤 시 텍스트 컬러링 효과) 참고, 애플의 경우 스크롤 할 때마다 background-position의 값을 변경하는 방식이고, 해당 모션은 clip-path를 활용하여 구현</p>
+				<p class="section-desc">motion3 : GSAP ScrollTrigger와 CSS transform:rotate, perspective, translate로 스크롤 시 텍스트 회전 효과 구현</p>
+				<p class="section-desc">motion4 : GSAP ScrollTrigger와 CSS transform, position 활용하여 스크롤 시 텍스트 및 배경 색상 반전 효과 구현</p>
+			</div>
+		</section>
+		<section class="study-section">
+			<h2>CSS3</h2>
+			<div class="section-item">
+				<h3>1. Flex & Grid</h3>
+				<a href="https://devjihyun.github.io/study/grid/index.html" target="_blank">Layout Demo</a>
+			</div>
+		</section>
+    </div>
+</body>
+</html>

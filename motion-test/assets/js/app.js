@@ -67,7 +67,7 @@
 					gsap.to(".text-hover-motion .circle", {
 						x: mouseX,
 						y: mouseY,
-						stagger: -0.1
+						stagger: -0.1 //순차적(시간 차)
 					})
 				})
 			},
